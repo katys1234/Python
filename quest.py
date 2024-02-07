@@ -30,6 +30,7 @@ class Warrior (Hero):
     def hello(self):
         if self.new == True:
             print('-> НОВЫЙ ГЕРОЙ! Из глубины леса появляется искусный воин', self.name)
+            self.new = False
         else:
             print('Снова появляется', self.name)
     def attack(self, enemy):
@@ -42,6 +43,7 @@ class Dragon (Hero):
     def hello(self):
         if self.new == True:
             print('-> НОВЫЙ ГЕРОЙ! С неба спускается свирепый дракон', self.name)
+            self.new = False
         else:
             print('И вновь перед нами разъярённый дракон', self.name)
     def attack(self, enemy):
